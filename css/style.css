@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #251010;
+  color: white;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #251010;
+}
+
+.header-index {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, black, #251010);
+  width: 100%;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, black, #251010);
+  bottom: 0;
+  position: fixed;
+}
+
+.titulo {
+  font-family: "Kumbh Sans", fantasy;
+}
+
+.titulo img {
+  width: 100px;
+}
+
+.link li {
+  display: inline;
+  overflow: hidden;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.link li a {
+  text-decoration: none;
+}
+
+.tituloTarjeta {
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #00031b;
+  height: 28rem;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px 0 #5564eb;
+  transition: all 0.5s ease 1s;
+  -webkit-transition: all 0.5s ease 1s;
+  /*Para Chrome y Safari*/
+  -moz-transition: all 0.5s ease 1s;
+  /*Mozilla*/
+  -o-transition: all 0.5s ease 1s;
+  /*Opera*/
+  -ms-transition: all 0.5s ease 1s;
+  /*Internet Explorer*/
+}
+
+.modal {
+  color: black;
+}
+
+.noticia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagenespc {
+  border-radius: 5px;
+  float: right;
+}
+.imagenespc caption {
+  font-size: 20px;
+}
+.imagenespc img {
+  width: 130px;
+}
+
+.titulosmall {
+  color: #00031b;
+}
+
+.producto {
+  font-size: 20px;
+  color: #3F72C5;
+}
+
+.precio {
+  background-color: #C5E7BB;
+  color: #234419;
+}
+
+@media only screen and (max-width: 900px) {
+  .titulo img {
+    width: 80px;
+  }
+
+  .titulo {
+    font-size: 95%;
+  }
+
+  .header-index {
+    flex-direction: column;
+    height: 110%;
+  }
+
+  .link li {
+    justify-content: space-around;
+    font-size: 95%;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .card:active {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px 0 #5564eb;
+    transition-delay: 0.5s;
+    transition: all 0.5s ease 1s;
+    -webkit-transition: all 0.5s ease 1s;
+    /*Para Chrome y Safari*/
+    -moz-transition: all 0.5s ease 1s;
+    /*Mozilla*/
+    -o-transition: all 0.5s ease 1s;
+    /*Opera*/
+    -ms-transition: all 0.5s ease 1s;
+    /*Internet Explorer*/
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
